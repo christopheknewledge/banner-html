@@ -1,0 +1,48 @@
+.commande {
+  position: fixed;
+  right: 40%;
+  top: 0;
+  z-index: 1;
+  background-color: #000;
+
+}
+.commande li {
+  padding: 10px;
+  margin-top: 5px;
+  background-color: yellow;
+  color: black;
+  list-style-type: none;
+  cursor: pointer;
+}
+.reso1 {
+  width: 120px;
+  height: 600px;
+}
+.reso2 {
+  width: 160px;
+  height: 600px;
+}
+.reso3 {
+  width: 300px;
+  height: 600px;
+}
+.reso4 {
+  width: 300px;
+  height: 250px;
+}
+.reso5 {
+  width: 320px;
+  height: 50px;
+}
+.reso6 {
+  width: 320px;
+  height: 100px;
+}
+.reso7 {
+  width: 468px;
+  height: 60px;
+}
+.reso8 {
+  width: 728px;
+  height: 90px;
+}

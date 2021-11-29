@@ -1,0 +1,89 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+   font-weight: normal;
+   font-size: 1em;
+}
+#content {
+  background-color: #ff8c00;
+  border: 1px solid #444;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 40% 1fr;
+  grid-template-areas: "a" "b" "c";
+  justify-items: stretch;
+}
+.col:nth-child(1) {
+  grid-area : a;
+  background-color: #000;
+}
+.col:nth-child(2) {
+  grid-area : b;
+}
+.col:nth-child(3) {
+  grid-area : c;
+}
+.logo img {
+  max-width: 140px;
+}
+.col {
+  position: relative;
+  overflow: hidden;
+}
+.flex {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.flex * {
+  margin: auto;
+  width: 85%;
+}
+.contentVisuel {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+  width: 100%;
+}
+.visu1 .contentVisuel {
+  background-image: url(img1.jpg);
+}
+.visu2 .contentVisuel {
+  background-image: url(img2.jpg);
+}
+.visu3 .contentVisuel {
+  background-image: url(img3.jpg);
+}
+.contentText {
+}
+.contentText {
+}
+.hide {
+  display: none;
+}
+.anime {
+  opacity: 0;
+}
+.launch {
+  opacity: 1;
+}
+.visu1.anime.launch, .texte1.anime.launch {
+  animation: slideInLeft 0.5s ease-out backwards, slideOutRight 0.5s 3s ease-out forwards;
+}
+.visu2.anime.launch, .texte2.anime.launch {
+  animation: slideInLeft 0.5s 3s ease-out backwards, slideOutRight 0.5s 6s ease-out forwards;
+}
+.visu3.anime.launch, .texte3.anime.launch {
+  animation: slideInLeft 0.5s 6s ease-out backwards;
+}
